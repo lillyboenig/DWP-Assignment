@@ -5,6 +5,8 @@ import ProductForm from './Components/ProductForm';
 import OrderInfo from './Components/OrderInfo';
 import productImage from './images/product-image.jpeg';
 
+import News from './News.jsx';
+
 import './App.css'
 
 function App() {
@@ -47,6 +49,15 @@ function ComponentExercise() {
               price={products[selectedProductIndex].price}
               quantity={quantity}
           />
+      </div>
+  );
+}
+
+function APIExercise() {
+  return (
+      <div>
+          <h1>WSJ News Explorer</h1>
+          <News />
       </div>
   );
 }
