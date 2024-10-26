@@ -8,6 +8,8 @@ import productImage from './images/product-image.jpeg';
 
 import News from './News.jsx';
 
+import Layout from './Layout.jsx';
+
 import './App.css'
 
 function App() {
