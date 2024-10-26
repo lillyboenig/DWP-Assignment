@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from './Components/Header';
 import ProductForm from './Components/ProductForm';
@@ -10,12 +11,16 @@ import News from './News.jsx';
 import './App.css'
 
 function App() {
-
   return (
-    <>
-      
-    </>
-  )
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Layout />}>
+                <Route path="news" element={<APIExercise />} />
+                <Route path="components" element={<ComponentExercise />} />
+            </Route>
+        </Routes>
+    </BrowserRouter>
+);
 }
 
 function ComponentExercise() {
